@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let email of emails" (click)="onNavigateToEmail(email.id)">
+    {{ email.title }}
+  </li>
+</ul>
+<router-outlet></router-outlet>
