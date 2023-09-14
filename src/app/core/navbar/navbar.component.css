@@ -3,3 +3,13 @@
   align-items: center;
   gap: 1rem;
 }
+
+button {
+  border: 1px solid green;
+  color: green;
+}
+
+button.not-authenticated {
+  border-color: red;
+  color: red;
+}

@@ -1,5 +1,10 @@
 <div class="navbar">
   <a routerLink="home">Home</a>
   <a routerLink="email">Email</a>
-  <button (click)="onNavigateToAuth()">Auth</button>
+  <button
+    (click)="onNavigateToAuth()"
+    [ngClass]="{ 'not-authenticated': (isAuth$ | async) === false }"
+  >
+    Auth
+  </button>
 </div>
